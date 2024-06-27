@@ -1,0 +1,58 @@
+/* GeneralSans-Regular */
+@font-face {
+  font-family: 'GeneralSans';
+  src: url('../fonts/GeneralSans-Regular.woff2') format('woff2'), url('../fonts/GeneralSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* GeneralSans-Medium */
+@font-face {
+  font-family: 'GeneralSans';
+  src: url('../fonts/GeneralSans-Medium.woff2') format('woff2'), url('../fonts/GeneralSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* GeneralSans-Semibold */
+@font-face {
+  font-family: 'GeneralSans';
+  src: url('../fonts/GeneralSans-Semibold.woff2') format('woff2'), url('../fonts/GeneralSans-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* GeneralSans-Bold */
+@font-face {
+  font-family: 'GeneralSans';
+  src: url('../fonts/GeneralSans-Bold.woff2') format('woff2'), url('../fonts/GeneralSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* GeneralSans-BoldItalic */
+@font-face {
+  font-family: 'GeneralSans';
+  src: url('../fonts/GeneralSans-BoldItalic.woff2') format('woff2'), url('../fonts/GeneralSans-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+
+html,
+body {
+  font-family: 'GeneralSans', sans-serif;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+button {
+  font-weight: 700;
+}

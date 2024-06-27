@@ -1,0 +1,32 @@
+{
+  "name": "translation-chat",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "kill-emulators": "lsof -i:5001,8080,9099,9199 | grep LISTEN | awk '{print $2}' | xargs -r kill -9 || true",
+    "predev": "npm run kill-emulators",
+    "dev": "concurrently --kill-others-on-fail \"npm run dev:types\" \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:types": "npm run build:watch --prefix libs/types",
+    "dev:frontend": "npm run dev --prefix apps/frontend",
+    "dev:backend": "concurrently \"npm run dev --prefix apps/backend/functions\" \"firebase emulators:start --only functions\"",
+    "build": "npm run build:types && concurrently \"npm run build:frontend\" \"npm run build:backend\"",
+    "build:types": "npm run build --prefix libs/types",
+    "build:frontend": "npm run build --prefix apps/frontend",
+    "build:backend": "npm run build --prefix apps/backend/functions",
+    "postdev": "npm run kill-emulators"
+  },
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "keywords": [],
+  "author": "Christiaan van Eijk • MadeForYou™",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^2.0.22",
+    "typescript": "^5.5.2"
+  }
+}

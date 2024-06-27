@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@shared/types": ["libs/types/src"]
+    },
+    "composite": true
+  },
+  "include": [],
+  "references": [
+    {
+      "path": "./apps/frontend"
+    },
+    {
+      "path": "./apps/backend/functions"
+    },
+    {
+      "path": "./libs/types"
+    }
+  ]
+}

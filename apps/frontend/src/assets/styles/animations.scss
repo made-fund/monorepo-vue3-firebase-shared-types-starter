@@ -1,0 +1,55 @@
+// // // // // // // // // // //
+// BUTTON INTERACTION ANIMATION
+// // // // // // // // // // //
+.tappable-small {
+  will-change: transform;
+  transition: transform 0.15s;
+  &:active {
+    transition: transform 0.08s;
+    transform: scale(0.92);
+  }
+}
+.tappable-medium {
+  will-change: transform;
+  transition: transform 0.2s;
+  &:active {
+    transition: transform 0.1s;
+    transform: scale(0.95);
+  }
+}
+.tappable-huge {
+  will-change: transform;
+  transition: transform 0.3s;
+  &:active {
+    transition: transform 0.14s;
+    transform: scale(0.98);
+  }
+}
+
+// // // // // // // // // //
+// CLICKTROUGH MODULE SLIDE ANIMATIONS
+// // // // // // // // // //
+
+// FORWARDS
+.slide-forwards-enter-active,
+.slide-forwards-leave-active {
+  transition: 0.4s cubic-bezier(0.29, 0.29, 0.13, 1);
+}
+.slide-forwards-enter-from {
+  transform: translateX(100%);
+}
+.slide-forwards-leave-to {
+  transform: translateX(-100%);
+}
+
+// BACKWARDS
+.slide-backwards-enter-active,
+.slide-backwards-leave-active {
+  transition: 0.4s cubic-bezier(0.29, 0.29, 0.13, 1);
+}
+.slide-backwards-enter-from {
+  transform: translateX(-100%);
+}
+.slide-backwards-leave-to {
+  transform: translateX(100%);
+}

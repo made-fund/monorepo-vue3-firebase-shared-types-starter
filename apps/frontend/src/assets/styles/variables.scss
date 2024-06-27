@@ -1,0 +1,20 @@
+:root {
+  --background-color: #000;
+
+  --primary-color: #20db4b;
+  --primary-color-02: #c3fb4120;
+  --primary-color-contrast: #000000;
+
+  --base-grey: #262626;
+  --base-grey-border: #393939;
+  --border-color: #353535;
+}
+
+// interaction wrapper (conversation message block!)
+$interaction-wrapper-border-radius: 19px;
+$interaction-wrapper-inner-padding: 5px;
+$interaction-wrapper-profile-picture-size: 32px;
+
+// colors
+$base-grey: #292927;
+$green: #c3fb41;
