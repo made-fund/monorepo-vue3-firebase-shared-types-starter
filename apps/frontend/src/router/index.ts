@@ -1,4 +1,4 @@
-import { RouteRecordRaw, createRouter, createWebHistory } from 'vue-router'
+import { type RouteRecordRaw, createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import handleAuthGuard from './middleware/handleAuthGuard'
 import handleGuestGuard from './middleware/handleGuestGuard'

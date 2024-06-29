@@ -21,12 +21,12 @@ import { functions } from '@/firebase'
  * Enable this to test if the frontend can connect to the backend via emulators during development
  * Safe to delete afterwards
  */
-// const callableFunction = httpsCallable(functions, 'helloWorld')
-// const test = async () => {
-//   const result = await callableFunction({ test: true })
-//   console.log(result.data)
-// }
-// test()
+const callableFunction = httpsCallable(functions, 'helloWorld')
+const test = async () => {
+  const result = await callableFunction({ test: true })
+  console.log(result.data)
+}
+test()
 </script>
 
 <style lang="scss">

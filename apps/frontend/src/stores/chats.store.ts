@@ -2,6 +2,7 @@ import { defineStore } from 'pinia'
 import { auth, db } from '@/firebase'
 import { useUser } from './user.store'
 import { collection, doc, getDocs, limit, onSnapshot, query, where } from 'firebase/firestore'
+import { testing } from '@shared/types'
 
 /**
  * ❓ This file serves as an example.
@@ -25,7 +26,7 @@ export const useChats = defineStore('chats', {
 
           // this.today = { id: snapshot.docs[0]?.id, ...snapshot.docs[0]?.data() } as DailyLog
 
-          if (snapshot.empty) return resolve(null)
+          if (!snapshot.exists) return resolve(null)
           resolve(snapshot.data())
         })
       })

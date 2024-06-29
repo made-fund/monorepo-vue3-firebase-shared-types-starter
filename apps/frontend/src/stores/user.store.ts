@@ -4,8 +4,8 @@ import { DocumentReference, addDoc, collection, doc, getDoc, onSnapshot, setDoc,
 import { auth, db } from '@/firebase'
 import { useRouter } from 'vue-router'
 import router from '@/router'
-import { User } from '@shared/types'
 import { useChats } from '@/stores/chats.store'
+import type { User } from '@shared/types'
 
 export const useUser = defineStore('userStore', {
   state: () => ({

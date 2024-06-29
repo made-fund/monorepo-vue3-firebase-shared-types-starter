@@ -17,3 +17,5 @@ export interface ChatMessage {
   userId: string
   timestamp: number
 }
+
+export const testing = '456'

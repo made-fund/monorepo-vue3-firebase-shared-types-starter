@@ -5,9 +5,12 @@ import { getStorage, connectStorageEmulator } from 'firebase/storage'
 import { initializeApp } from 'firebase/app'
 
 const firebaseConfig = {
-  /**
-   * Add firebase config here
-   */
+  apiKey: 'AIzaSyDXPT_zdX4qgVrAVo2DkO2FHOskg5pGki0',
+  authDomain: 'translator-chat-mvp.firebaseapp.com',
+  projectId: 'translator-chat-mvp',
+  storageBucket: 'translator-chat-mvp.appspot.com',
+  messagingSenderId: '223512001613',
+  appId: '1:223512001613:web:8bbb7e1be7bba8f1f0b004',
 }
 
 const app = initializeApp(firebaseConfig)

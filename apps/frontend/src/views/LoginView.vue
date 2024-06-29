@@ -33,7 +33,7 @@ const login = async () => {
   } catch (error) {
     const err = error as { code: string; message?: string }
 
-    console.log(error.code)
+    console.log(err.code)
 
     if (err.code === 'user/missing-fields') errorMessage.value = 'Fill in all fields'
     if (err.code === 'auth/invalid-email') errorMessage.value = 'Invalid email adress'

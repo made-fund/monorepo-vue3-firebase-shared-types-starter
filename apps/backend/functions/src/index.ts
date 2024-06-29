@@ -8,6 +8,7 @@
  */
 import { onCall } from 'firebase-functions/v2/https'
 import { onDocumentCreated, onDocumentUpdated } from 'firebase-functions/v2/firestore'
+import { ChatMessage, testing } from './types'
 
 /**
  * ❓ This gets tested in the app.vue of the frontend file and serves as proof of a succesful installation of this repo
@@ -28,5 +29,15 @@ export const onNewChatCreated = onDocumentCreated('chats/{docId}', (event) => {
 })
 
 export const onChatUpdated = onDocumentUpdated('chats/{docId}', (event) => {
+  const test: ChatMessage = {
+    id: '',
+    text: '',
+    userId: '',
+    timestamp: 0,
+  }
+
+  console.log(testing)
+  console.log(test)
+
   console.log(event.data?.after.data())
 })

@@ -1,21 +1,15 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": {
-      "@shared/types": ["libs/types/src"]
-    },
-    "composite": true
+    
+    "composite": true,
+    "rootDir": "."
+
   },
-  "include": [],
+  "exclude": ["node_modules"],
   "references": [
     {
       "path": "./apps/frontend"
     },
-    {
-      "path": "./apps/backend/functions"
-    },
-    {
-      "path": "./libs/types"
-    }
   ]
 }
