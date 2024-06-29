@@ -16,6 +16,7 @@
 
 1. Clone this repo
 2. Run `npm install` in your terminal from the root level.
+3. In your terminal, `cd` into `apps/backend/functions` and also run `npm install`.
 
 #### Step 3 and 4 are only needed if you manually cloned this repo. If you used this as a github template, a new repo has already been created.
 
