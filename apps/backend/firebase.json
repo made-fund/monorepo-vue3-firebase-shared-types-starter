@@ -38,8 +38,6 @@
     "ui": {
       "enabled": true
     },
-    "exportOnExit": true,
-    "import": "./emulator-backup",
     "singleProjectMode": true
   }
 }
