@@ -17,7 +17,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       // Ensure the shared types file is included in the build
-      external: ['@shared/types'],
+      external: ['../backend/functions/src/types.ts'],
+      // external: ['@shared/types'], ❓ above line is a suggestion by Danny. This is what it was originally
     },
   },
 })
